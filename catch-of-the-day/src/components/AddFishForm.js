@@ -9,7 +9,7 @@ class AddFishForm extends React.Component {
       status: this.status.value,
       desc: this.desc.value,
       image: this.image.value,
-    }
+    };
     this.props.addFish(fish);
     this.fishForm.reset();
   }
@@ -27,7 +27,7 @@ class AddFishForm extends React.Component {
         <input ref={ (input) => this.image = input } type="text" placeholder="Fish Image"/>
         <button type="submit">+ Add Item</button>
       </form>
-    )
+    );
   }
 }
 
